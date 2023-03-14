@@ -1,3 +1,19 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  max-width: 700px;
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 700px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
 .signup-button {
     border: 0px solid white;
     background-color: rgb(2, 68, 100);
@@ -38,7 +54,6 @@
     color: black;
     text-align: left;
     font-weight: 100;
-    width: 700px;
     padding: 8px;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,21 +61,23 @@
 
   .row {
     display: flex;
+    max-width: 700px;
   }
   
   .column {
     float: left;
     width: 33.33%;
     margin: 8px;
+    margin-top: 24px;
   }
 
   .center {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
   }
 
   hr.new1 {
-    border-top: 1px solid rgb(77, 77, 77);
+    border-top: 1px solid rgb(187, 187, 187, 0.4);
   }
 
 .responsive {
@@ -72,6 +89,7 @@
 .recipe-card {
     background-color: rgb(236, 236, 236);
     border-radius: 8px;
+    width: auto;
   }
 
   .recipe-card-header {
